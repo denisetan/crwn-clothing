@@ -4,6 +4,7 @@ import { Route} from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
+<<<<<<< HEAD
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
@@ -47,6 +48,21 @@ class App extends React.Component {
   }
 
   
+=======
+import ShopPage from './pages/shop/shop.component.jsx';
+import Header from './components/header/header.component.jsx';
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+      </switch>
+    </div>
+  );
+>>>>>>> 0db5661fa31ddae3f44ac8b57281aada81172a29
 }
 
 export default App;
